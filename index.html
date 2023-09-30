@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js" integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s=" crossorigin=""></script>
+    <title>ISS Locator</title>
+</head>
+<body>
+    <h1 style="font-size:20px;">ISS <span style="color:red;">LOCATOR</span></h1>
+    <div id="root">
+        <h2>Real-time Location of the ISS</h2>
+        <div class="recenter"><button>Recenter</button></div>
+        <div class="container">
+            <div id="iss">
+                <div id="issMap"></div>
+            </div>
+            <div id="issInfo">
+                <div id="info">
+                    <table>
+                        <tr>
+                            <td id="sc">Time</td>
+                            <td id="time"></td>
+                        </tr>
+                        <tr>
+                            <td id="sc">Latitude</td>
+                            <td id="lat"></td>
+                        </tr>
+                        <tr>
+                            <td id="sc">Longitude</td>
+                            <td id="lon"></td>
+                        </tr>
+                        <tr>
+                            <td id="sc">Velocity</td>
+                            <td id="velocity"></td>
+                        </tr>
+                        <tr>
+                            <td id="sc">footprint</td>
+                            <td id="footprint"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>
