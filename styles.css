@@ -1,0 +1,155 @@
+body {
+    padding: 10px;
+    background-color: #000014;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    color: #c2c5ff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1,
+h2,
+h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(255, 217, 0, 0.61);
+    font-family: 'Croissant One', cursive;
+}
+
+#root {
+    font-family: Arial, sans-serif;
+    color: #bfd0ff;
+    margin: auto;
+    width: 90%;
+    height: auto;
+    margin-top: 10px;
+    background-color: #00006e;
+    padding: 50px 20px 50px 20px;
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px #1b37b4;
+    text-align: center;
+    min-height: 400px;
+}
+
+
+.container {
+    color: black;
+}
+
+#iss {
+    padding: 4px;
+    color: black;
+    border-radius:5px;
+    
+}
+
+
+#issMap {
+    height: 350px;
+    border-radius: 10px;
+}
+
+#info {
+    padding: 5px;
+}
+
+#issInfo {
+    display: flex;
+    justify-content: space-around;
+    background-color:#80bbf3;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+table {
+    padding: 5px;
+    border-collapse: collapse;
+    margin: 25px 0;
+    margin-left: 0;
+    font-size: 1.2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    min-width: 320px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    text-align: left;
+}
+
+
+table tr:nth-of-type(even) {
+    background-color: #8498f0;
+    box-shadow: 1px 1px 10px 1px #1b37b4b9;
+    border-radius:10px;
+}
+
+tr td {
+    padding: 5px;
+}
+
+#sc {
+    font-weight: 700;
+}
+
+.recenter {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.recenter button {
+    border-radius: 25px;
+    padding: 7px;
+    background-color: #6767ff;
+    border: 1px solid #6767ff;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.recenter button:hover {
+    background-color: rgb(0, 89, 255);
+    color: black;
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+        overflow: hidden;
+    }
+
+    #root {
+        max-height: 500px;
+    }
+    .container {
+        display: flex;
+        justify-content: space-around;
+        max-height: 400px;
+    }
+
+    #iss {
+        width: 70%;
+    }
+
+    #issInfo {
+        width: 27%;
+    }
+
+    #issMap {
+        max-height: 400px;
+        height: 400px;
+    }
+
+    #issInfo {
+        display: block;
+    }
+
+    table {
+        min-width: 100%;
+    }
+
+    .recenter {
+        margin-left: -27%;
+    }
+
+}
